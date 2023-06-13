@@ -1,9 +1,12 @@
 import "./index.css";
 
 const Card = ({ data }) => {
+    const onHandleClick = () => alert(data.todo);
 
 return (
-<h3 className="todo__title">{data.todo}</h3>   
+    <div className="Card" onClick={onHandleClick}>
+<h3 className="todo__title">{data.todo}</h3> 
+</div>  
 );
 };
 
